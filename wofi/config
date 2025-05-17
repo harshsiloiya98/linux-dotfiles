@@ -1,0 +1,14 @@
+hide_scroll=true
+show=drun
+lines=10
+width=30%
+term=kitty
+line_wrap=word
+allow_markup=true
+hide_scroll=true
+allow_images=true
+gtk_dark=true
+image_size=20
+location=center
+key_expand=Tab
+prompt=What are you looking for?
