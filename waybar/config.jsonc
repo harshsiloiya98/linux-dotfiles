@@ -1,9 +1,10 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 35,
-    "width": 1910,
-    "margin": "3, 0, 2, 0",
+    // "height": 10,
+    // "width": 1910,
+    // margin format - top right bottom left 
+    "margin": "2, 3, 2, 3",
     // Choose the order of the modules
     "modules-left": [
 	// "custom/wmname",
@@ -251,6 +252,7 @@
 	"menu-file": "$HOME/.config/waybar/custom_modules/power_menu.xml",
 	"menu-actions": {
 		"shutdown": "shutdown now",
+		"logout": "sway exit",
 		"reboot": "reboot",
 		"suspend": "systemctl suspend"
 	}
