@@ -29,7 +29,8 @@
 	// "custom/rhythmbox"
     ],
     "modules-right": [
-        // "idle_inhibitor",
+	"custom/separator",
+        "idle_inhibitor",
         "custom/separator",
         "backlight", 
         "custom/separator",

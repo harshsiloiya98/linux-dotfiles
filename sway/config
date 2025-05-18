@@ -234,10 +234,18 @@ bindsym $mod+r mode "resize"
 #
 include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "/etc/sway/config.d/*.conf" "${XDG_CONFIG_HOME:-$HOME/.config}/sway/config.d/*.conf")'
 
-set $default_gaps_outer 3
-set $default_gaps_inner 3
-
-gaps inner $default_gaps_inner
-gaps outer $default_gaps_outer
+# set $default_gaps_outer 3
+# set $default_gaps_inner 3
+# gaps inner $default_gaps_inner
+# gaps outer $default_gaps_outer
 
 default_border none
+
+gaps inner 3
+# gaps outer 5
+# gaps horizontal 5
+# gaps vertical 5
+gaps top 3
+gaps right 3
+gaps bottom 3
+gaps left 3
