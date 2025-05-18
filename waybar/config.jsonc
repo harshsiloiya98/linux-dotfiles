@@ -26,6 +26,7 @@
 	// "sway/window",
 	// "custom/weather",
 	"custom/spotify"
+	// "custom/rhythmbox"
     ],
     "modules-right": [
         // "idle_inhibitor",
@@ -137,7 +138,7 @@
     },
     "backlight": {
         // "device": "acpi_video1",
-        "format": "{icon}&#8239;{percent}%",
+        "format": "{icon} {percent}%",
         "format-icons": ["💡", "💡"],
         "on-scroll-down": "brightnessctl -c backlight set 1%-",
         "on-scroll-up": "brightnessctl -c backlight set +1%"
@@ -239,9 +240,9 @@
 	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
     },
     "custom/weather": {
-	"format": "{} ",
+	"format": "{}°C ",
 	"tooltip": true,
-	"interval": 3600,
+	"interval": 1800,
 	"exec": "$HOME/.config/waybar/custom_modules/wttrbar",
 	"return-type": "json"
     },
@@ -262,5 +263,13 @@
       "format": "  {}",
       "return-type": "json",
       "on-click": "playerctl play-pause -p spotify"
+    },
+    // This does not properly, does not change music title on next track
+    "custom/rhythmbox": {
+      "exec": "rhythmbox-client --print-playing",
+      // "exec": "rhythmbox-client --print-playing --print-playing-format=\"%aa - %tt\"",
+      "format": "  {}",
+      "return-type": "text",
+      "on-click": "rhythmbox-client --play-pause"
     }
 }

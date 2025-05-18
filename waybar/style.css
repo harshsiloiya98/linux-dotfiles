@@ -83,6 +83,7 @@ window#waybar.hidden {
 #custom-power,
 #custom-pacman,
 #custom-spotify,
+#custom-rhythmbox,
 #language {
     padding: 0px 3px;
     margin: 4px 3px 5px 3px;
@@ -232,3 +233,8 @@ label:focus {
     color: #66ae6a
 }
     
+#custom-rhythmbox {
+    padding: 0 10px;
+    margin: 0 4px;
+    color: #c47396;
+}
