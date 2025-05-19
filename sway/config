@@ -252,7 +252,7 @@ gaps inner 5
 # gaps outer 5
 # gaps horizontal 5
 # gaps vertical 5
-gaps top 2
+gaps top 3
 gaps right 3
 gaps bottom 3
 gaps left 3
