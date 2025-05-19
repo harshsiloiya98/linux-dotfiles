@@ -31,7 +31,8 @@ set $menu wofi --style /home/harsh/.config/wofi/gruvbox.css
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 # Requires: desktop-backgrounds-compat, swaybg, jxl-pixbuf-loader
-output * bg /home/harsh/Pictures/wallpapers/1731871869090729.jpg fill
+# 1731871869090729.jpg fill
+output * bg $HOME/Pictures/wallpapers/112069114_p0.png fill
 #
 # Example configuration:
 #
@@ -59,12 +60,18 @@ output DP-2 mode 2560x1440@143.973Hz
 #
 # Example configuration:
 #
-   input "1739:52900:SYNA3106:00_06CB:CEA4_Touchpad" {
-       dwt enabled
-       tap enabled
-       natural_scroll enabled
-       middle_emulation enabled
-   }
+input "1739:52900:SYNA3106:00_06CB:CEA4_Touchpad" {
+    dwt enabled
+    tap enabled
+    natural_scroll enabled
+    middle_emulation enabled
+}
+
+#input "1:1:AT_Translated_Set_2_keyboard" {
+#    xbb_layout us,jp
+#    xbb_variant ,nodeadkeys
+#    xbb_options grp:alt_shit_toggle
+#}
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
@@ -241,11 +248,11 @@ include '$(/usr/libexec/sway/layered-include "/usr/share/sway/config.d/*.conf" "
 
 default_border none
 
-gaps inner 3
+gaps inner 5
 # gaps outer 5
 # gaps horizontal 5
 # gaps vertical 5
-gaps top 3
+gaps top 2
 gaps right 3
 gaps bottom 3
 gaps left 3
