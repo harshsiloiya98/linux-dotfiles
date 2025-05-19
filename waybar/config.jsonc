@@ -4,7 +4,7 @@
     // "height": 10,
     // "width": 1910,
     // margin format - top right bottom left 
-    "margin": "2, 3, 2, 3",
+    "margin": "2, 3, 0, 3",
     // Choose the order of the modules
     "modules-left": [
 	// "custom/wmname",
@@ -67,14 +67,18 @@
     // },
     "sway/workspaces": {
 	"on-click": "activate",
-	//"format": "{icon}",
-	//"format-icons": {
-	//    "1": "१",
-	//    "2": "२",
-	//    "3": "३",
-	//    "4": "४",
-	//    "5": ""
-	//}
+	"format": "{icon}",
+	"format-icons": {
+	    "1": "१",
+	    "2": "२",
+	    "3": "३",
+	    "4": "४",
+	    "5": "५",
+            "6": "६",
+	    "7": "७",
+            "8": "८",
+            "9": "९"
+	},
 	"persistent-workspaces": {
 	    "1": [],
 	    "2": [],
