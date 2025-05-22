@@ -117,9 +117,9 @@
     "clock": {
         // "interval": 1,
         // "locale": "C", 
-        "format": " {:%H:%M %a %b %d %Y}",
+        "format": " {:%H:%M  %a %b %d %Y}",
 	"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%a,%b %d}" // Icon: calendar-alt
+        // "format-alt": " {:%a,%b %d}" // Icon: calendar-alt
     },
     "cpu": {
         "format": "&#8239;{usage}%",
@@ -168,11 +168,12 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "&#8239;{essid}",
+        // "format-wifi": "&#8239;{essid}",
+	"format-wifi": "&#8239;{ifname}: {ipaddr}/{cidr}",
         "format-ethernet": "&#8239;{ifname}: {ipaddr}/{cidr}",
         "format-linked": "&#8239;{ifname} (No IP)",
         "format-disconnected": "✈&#8239;Disconnected",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
         "tooltip-format": "{essid}: {ipaddr}"
     },
     "pulseaudio": {
