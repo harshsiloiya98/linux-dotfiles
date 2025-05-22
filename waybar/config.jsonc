@@ -68,17 +68,19 @@
     "sway/workspaces": {
 	"on-click": "activate",
 	"format": "{icon}",
-	"format-icons": {
-	    "1": "१",
-	    "2": "२",
-	    "3": "३",
-	    "4": "४",
-	    "5": "५",
-            "6": "६",
-	    "7": "७",
-            "8": "८",
-            "9": "९"
-	},
+	//"icon-size": 20,
+	//"format-icons": {
+        //    //"1": "",
+	//    "1": "१",
+	//    "2": "२",
+	//    "3": "३",
+	//    "4": "४",
+	//    "5": "५",
+        //    "6": "६",
+	//    "7": "७",
+        //    "8": "८",
+        //    "9": "९"
+	//},
 	"persistent-workspaces": {
 	    "1": [],
 	    "2": [],
@@ -144,9 +146,10 @@
     "backlight": {
         // "device": "acpi_video1",
         "format": "{icon} {percent}%",
-        "format-icons": ["💡", "💡"],
-        "on-scroll-down": "brightnessctl -c backlight set 1%-",
-        "on-scroll-up": "brightnessctl -c backlight set +1%"
+        // "format-icons": ["💡", "💡"],
+	"format-icons": ["🌑", "🌘", "🌗", "🌖", "🌕"],
+        // "on-scroll-down": "brightnessctl -c backlight set 1%-",
+        // "on-scroll-up": "brightnessctl -c backlight set +1%"
     },
     "battery": {
         "states": {
